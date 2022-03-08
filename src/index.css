@@ -1,0 +1,194 @@
+
+:root {
+  --background: #f7f7f7;
+  --text-primary: #000;
+  --text-secondary: #8e05c2;
+  --accent: linear-gradient(to right, rgba(255,105,158,1),rgba(192,54,238,1));
+  --border: #808080;
+  --form-bg: #fff;
+  --welcome:#303033;
+}
+
+[data-theme='dark'] {
+  --background: #300F6A;
+  --text-primary: #fff;
+  --text-secondary: #8e05c2;
+  --accent: linear-gradient(to right, rgba(255,105,158,1),rgba(192,54,238,1));
+  --border: #808080;
+  --form-bg: rgba(28,6,64,1);
+  --welcome:#fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+   
+}
+
+a {
+  color: var(--text-secondary);
+}
+
+.app {
+  background-color: var(--background);
+  color: var(--text-primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: .8rem;
+  transition: all .5s;
+}
+
+.login h1 {
+  text-align: center;
+  margin: -6rem 0 2rem;
+  font-size: 48px;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+  font-family: 'MuseoModerno', cursive;
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 32px;
+  line-height: 51px;
+  letter-spacing: -0.02em;
+  color: var(--welcome);
+  
+
+}
+
+.theme-toggle i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  width: 500px;
+  margin: auto;
+  border-radius: 24px;
+  background-color: var(--form-bg);
+  
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  height: 216px;
+  left: 612px;
+  top: 120px;
+}
+
+.top i {
+  font-size: 1rem;
+}
+
+.divider {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--text-primary);
+  line-height: .1rem;
+  margin: 2rem 0;
+}
+
+span {
+  padding: 0 10px;
+  background-color: var(--form-bg);
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputtype{
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--text-secondary);
+  background: var(--form-bg);
+  color: var(--text-primary);
+  width: 360px;
+  height: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+label {
+  font-weight: 600;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  
+}
+
+input {
+  border: none;
+  margin-top: 10px;
+  width: 320px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  color: var(--text-primary);
+  
+}
+::placeholder{
+  color: var(--border);
+
+}
+
+
+button {
+  background-image: var(--accent);
+  border: 1px solid var(--accent);
+  color: #fff;
+  /* margin: 16px 0; */
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 360px;
+  height: 50px;
+  opacity: 0.6;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  
+  
+}
+
+
+.create {
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width:478px) {
+  .login {
+    width: 95%;
+  }
+}
